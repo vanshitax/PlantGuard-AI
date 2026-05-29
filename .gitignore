@@ -1,0 +1,11 @@
+venv/
+dataset/
+
+**pycache**/
+.ipynb_checkpoints/
+
+.DS_Store
+
+*.pyc
+*.pyo
+saved_models/
