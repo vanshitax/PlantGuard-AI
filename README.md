@@ -74,6 +74,28 @@ PlantGuard-AI/
 
 Dataset: PlantVillage - New Plant Diseases Dataset
 
+## Dataset
+
+This project uses the PlantVillage dataset for plant disease classification.
+
+### Dataset Details
+
+- Total Classes: 38
+- Dataset: PlantVillage
+- Image Type: RGB Leaf Images
+- Includes Healthy and Diseased Plant Categories
+- Used for Transfer Learning and Fine-Tuning
+
+### Class Distribution
+
+- 38 Disease Categories
+- 87,000+ Images
+- Training and Validation Split
+
+### Dataset Source
+
+https://www.kaggle.com/datasets/emmarex/plantdisease
+
 ### Dataset Statistics
 
 | Category          | Count  |
