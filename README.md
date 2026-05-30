@@ -33,7 +33,7 @@ The application provides disease predictions, confidence scores, top-3 predictio
 - Seaborn
 
 ### Evaluation
-- Scikit-Learn
+- scikit-learn
 
 ## Dataset
 
