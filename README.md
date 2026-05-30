@@ -20,6 +20,35 @@ The application provides disease predictions, confidence scores, top-3 predictio
 * Disease information panel
 * Image upload and real-time prediction
 
+## Repository Structure
+
+```text
+PlantGuard-AI/
+├── saved_models/
+│   ├── best_finetuned_model.keras
+│   ├── final_plant_disease_model.keras
+│   └── plant_disease_transfer_learning.keras
+│
+├── notebooks/
+│   ├── data_preprocessing.ipynb
+│   ├── model_evaluation.ipynb
+│   ├── gradcam.ipynb
+│   └── confusion_matrix.ipynb
+│
+├── screenshots/
+│   ├── app_home.png
+│   ├── classification_report.png
+│   ├── confusion_matrix.png
+│   └── training_curves.png
+│
+├── test_images/
+│
+├── streamlit_app.py
+├── requirements.txt
+├── README.md
+└── LICENSE
+```
+
 ## Tech Stack
 
 ### Machine Learning
