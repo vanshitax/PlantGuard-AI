@@ -14,6 +14,27 @@ The application provides disease predictions, confidence scores, top-3 predictio
 * Disease information panel
 * Image upload and real-time prediction
 
+## Tech Stack
+
+### Machine Learning
+- TensorFlow
+- Keras
+- EfficientNetB0
+
+### Application Development
+- Streamlit
+
+### Data Processing
+- NumPy
+- Pandas
+
+### Visualization
+- Matplotlib
+- Seaborn
+
+### Evaluation
+- Scikit-Learn
+
 ## Dataset
 
 Dataset: PlantVillage - New Plant Diseases Dataset
