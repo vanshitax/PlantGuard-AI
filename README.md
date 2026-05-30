@@ -108,6 +108,10 @@ https://www.kaggle.com/datasets/emmarex/plantdisease
 
 Base Model: **EfficientNetB0**
 
+## System Architecture
+
+![System Architecture](screenshots/architecture_diagram.png)
+
 ### Training Pipeline
 
 1. Transfer Learning using ImageNet pretrained weights
