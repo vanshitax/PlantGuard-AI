@@ -1,5 +1,11 @@
 # PlantGuard-AI
 
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Deep%20Learning-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-red)
+![Accuracy](https://img.shields.io/badge/Accuracy-98.82%25-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 PlantGuard-AI is a deep learning-based plant disease detection system that identifies plant diseases from leaf images using a fine-tuned EfficientNetB0 model.
 
 The application provides disease predictions, confidence scores, top-3 predictions, and disease information through an interactive Streamlit web interface.
