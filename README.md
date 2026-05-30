@@ -88,6 +88,12 @@ Classification Head:
 - Displayed Top-3 predictions with confidence scores and disease information.
 - Implemented data augmentation, early stopping, and model checkpointing.
 
+## Live Demo
+
+The application can be accessed online using Streamlit Cloud.
+
+🔗 Demo Link: Coming Soon
+
 ## Application Preview
 
 ### Home Screen
