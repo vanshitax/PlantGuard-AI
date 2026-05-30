@@ -36,7 +36,7 @@ The application provides disease predictions, confidence scores, top-3 predictio
 
 The application can be accessed online using Streamlit Cloud.
 
-🔗 Demo Link: Coming Soon
+https://plantguard-ai.streamlit.app
 
 ---
 
