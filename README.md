@@ -73,6 +73,15 @@ Classification Head:
 | Validation Accuracy | 98.82% |
 | Validation Loss     | 0.0384 |
 
+## Project Highlights
+
+- Built a deep learning model capable of classifying 38 plant disease categories.
+- Achieved 98.82% validation accuracy using transfer learning and fine-tuning.
+- Utilized EfficientNetB0 pretrained on ImageNet for feature extraction.
+- Developed an interactive Streamlit web application for real-time predictions.
+- Displayed Top-3 predictions with confidence scores and disease information.
+- Implemented data augmentation, early stopping, and model checkpointing.
+
 ## Application Preview
 
 ### Home Screen
