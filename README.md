@@ -1,44 +1,53 @@
 # PlantGuard-AI
 
-PlantGuard-AI is a deep learning-based plant disease detection system that identifies diseases from leaf images using a fine-tuned EfficientNetB0 model.
+PlantGuard-AI is a deep learning-based plant disease detection system that identifies plant diseases from leaf images using a fine-tuned EfficientNetB0 model.
 
-The project includes a Streamlit web application where users can upload a leaf image and receive disease predictions along with confidence scores and disease information.
+The application provides disease predictions, confidence scores, top-3 predictions, and disease information through an interactive Streamlit web interface.
 
 ## Features
 
-* Plant disease classification across 38 classes
+* Classification of 38 plant disease categories
 * Transfer learning using EfficientNetB0
-* Fine-tuned model for improved performance
-* Streamlit-based web interface
-* Top-3 predictions with confidence scores
+* Fine-tuned model for improved accuracy
+* Streamlit-based user interface
+* Top-3 prediction display with confidence scores
 * Disease information panel
-* Clean and interactive user experience
+* Image upload and real-time prediction
 
 ## Dataset
 
-This project uses the PlantVillage "New Plant Diseases Dataset" from Kaggle.
+Dataset: PlantVillage - New Plant Diseases Dataset
 
-Dataset Statistics:
+### Dataset Statistics
 
-* Training Images: 70,295
-* Validation Images: 17,572
-* Classes: 38
+| Category          | Count  |
+| ----------------- | ------ |
+| Training Images   | 70,295 |
+| Validation Images | 17,572 |
+| Classes           | 38     |
 
-## Model
+The dataset contains healthy and diseased leaf images from multiple crops including tomato, potato, corn, grape, apple, strawberry, peach, pepper, soybean, orange, raspberry, and cherry.
 
-Base Architecture: EfficientNetB0
+## Model Architecture
 
-Training Strategy:
+Base Model: **EfficientNetB0**
 
-* Transfer Learning
-* Fine-Tuning
-* Data Augmentation
-* Early Stopping
-* Model Checkpointing
+Training Pipeline:
 
-### Results
+1. Transfer Learning using ImageNet pretrained weights
+2. Feature extraction with frozen base layers
+3. Fine-tuning upper EfficientNet layers
+4. Model checkpointing and validation monitoring
 
-| Metric              | Score  |
+Classification Head:
+
+* GlobalAveragePooling2D
+* Dropout
+* Dense (38 classes)
+
+## Results
+
+| Metric              | Value  |
 | ------------------- | ------ |
 | Validation Accuracy | 98.82% |
 | Validation Loss     | 0.0384 |
@@ -51,11 +60,15 @@ Training Strategy:
 
 ### Healthy Leaf Prediction
 
-![Healthy Prediction](screenshots/healthy_prediction1.png)(screenshots/healthy_prediction2.png)
+![Healthy Prediction 1](screenshots/healthy_prediction1.png)
+
+![Healthy Prediction 2](screenshots/healthy_prediction2.png)
 
 ### Diseased Leaf Prediction
 
-![Diseased Prediction](screenshots/diseased_prediction1.png) (screenshots/diseased_prediction2.png)
+![Diseased Prediction 1](screenshots/diseased_prediction1.png)
+
+![Diseased Prediction 2](screenshots/diseased_prediction2.png)
 
 ## Training Visualizations
 
@@ -71,19 +84,30 @@ Training Strategy:
 
 ![Classification Report](screenshots/classification_report.png)
 
+## Project Structure
+
+```text
+PlantGuard-AI
+│
+├── notebooks/
+├── screenshots/
+├── test_images/
+├── streamlit_app.py
+├── requirements.txt
+└── README.md
+```
+
 ## Installation
 
 ```bash
-git clone <repository-url>
-cd PlantGuard-AI
+git clone https://github.com/vanshitax/PlantGuard-AI.git
 
-python -m venv venv
-source venv/bin/activate
+cd PlantGuard-AI
 
 pip install -r requirements.txt
 ```
 
-## Run
+## Run Application
 
 ```bash
 streamlit run streamlit_app.py
@@ -94,7 +118,7 @@ streamlit run streamlit_app.py
 * Grad-CAM visual explanations
 * Additional disease information coverage
 * Mobile-friendly deployment
-* Real-time camera support
+* Real-time camera integration
 
 ## Author
 
