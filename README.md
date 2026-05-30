@@ -106,6 +106,32 @@ https://www.kaggle.com/datasets/emmarex/plantdisease
 
 The dataset contains healthy and diseased leaf images from multiple crops including tomato, potato, corn, grape, apple, strawberry, peach, pepper, soybean, orange, raspberry, and cherry.
 
+## Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/vanshitax/PlantGuard-AI.git
+```
+
+### Navigate to Project Directory
+
+```bash
+cd PlantGuard-AI
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Run Locally
+
+```bash
+streamlit run streamlit_app.py
+```
+
 ## Model Architecture
 
 Base Model: **EfficientNetB0**
